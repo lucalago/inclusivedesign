@@ -1,0 +1,93 @@
+:root{
+    --dark-mode-main-color: rgb(2, 3, 34);
+    --light-mode-main-color: #ffffff;
+    --dark-mode-secondary-color: #57B2AD;
+    --light-mode-secondary-color: #096d68;
+}
+
+body {
+    /* Dark mode default */
+    background-color: var(--dark-mode-main-color);
+    color: var(--light-mode-main-color);
+
+    /* Spacing */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+h1, h3 {
+    color: var(--dark-mode-secondary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.white {
+    color: var(--light-mode-main-color)
+}
+
+/* Dark mode default deactivated if preferred scheme is light */
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-mode-main-color);
+        color: var(--dark-mode-main-color);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--light-mode-secondary-color);
+    }
+    p {
+        color: var(--dark-mode-main-color);
+    }
+}
+
+/* Nav Bar */
+nav {
+    background-color: var(--dark-mode-main-color) !important;
+}
+nav a {
+    font-size: 1rem !important;
+    padding-left: 5rem;
+}
+
+nav a img#inclusia-logo {
+    max-width: 20px !important;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-weight: 200 !important;
+}
+
+.active {
+    font-weight: bold !important;
+}
+
+/* Main spacing - DIV .container */
+
+div.container {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+/* About Section */
+
+
+/* Illustrations */
+img#image-01, img#image-02, img#image-03 {
+    min-width: 40% !important;
+    max-width: 50% !important;
+}
