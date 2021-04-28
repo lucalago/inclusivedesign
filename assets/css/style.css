@@ -9,10 +9,6 @@
 }
 
 body {
-    /* Dark mode default */
-    background-color: var(--dark-mode-main-color);
-    color: var(--light-mode-main-color);
-
     /* Spacing */
     margin: 0;
     padding: 0;
@@ -64,9 +60,10 @@ p {
 
 /* Nav Bar */
 nav {
-    background-color: var(--dark-mode-main-color) !important;
+    background-color: var(--light-mode-main-color) !important;
 }
 nav a {
+    color: var(--dark-mode-main-color) !important;
     font-size: 1rem !important;
     padding-left: 5rem;
 }

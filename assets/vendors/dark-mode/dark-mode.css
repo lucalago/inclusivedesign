@@ -1,0 +1,9 @@
+[data-theme="dark"] {
+  background-color: var(--dark-mode-main-color);
+  color: var(--light-mode-main-color);
+}
+
+[data-theme="dark"] > nav, [data-theme="dark"] > nav a {
+  background-color: var(--dark-mode-main-color) !important;
+  color: var(--light-mode-main-color) !important;
+}
